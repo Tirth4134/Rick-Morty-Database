@@ -1,0 +1,410 @@
+/* Body Styling with Background Image */
+body {
+  background: url('./image.png') no-repeat center center fixed;
+  background-color: rgba(74, 44, 42, 0.3); /* Reduced opacity for dark brown overlay */
+  background-size: cover;
+  min-height: 100vh;
+  padding: 20px;
+  color: #FFFFFF; /* White text for contrast */
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  /* margin-bottom: 20px; */
+  position: relative;
+  /* color: #FF5555 !important */
+  
+
+}
+
+/* Title */
+.title {
+  font-family: 'Winsideuz', sans-serif; /* Gothic horror font */
+  font-size: 5.5rem;
+  color: #FFFFFF !important;
+  text-shadow: 2px 2px 4px #D4A017; /* Orange shadow for horror effect */
+  /* margin: 5px; */
+  /* animation: dripEffect 2s infinite alternate; */
+}
+
+/* Table Styling */
+#rickyAndMortyTable {
+  width: 100% !important;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: rgba(74, 44, 42, 0.6); /* Slightly transparent dark brown */
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+/* Table Header - Custom Color */
+#rickyAndMortyTable thead th {
+  background-color: #D4A017; /* Orange from gothic horror theme */
+  color: #FFFFFF; /* White text */
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 18px;
+  text-align: left;
+  border-bottom: 2px solid #FFFFFF;
+  text-transform: none;
+  letter-spacing: normal;
+  position: static;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+/* Table Body - Normal, Clean Layout */
+#rickyAndMortyTable tbody tr {
+  background: rgba(74, 44, 42, 0.5); /* Lighter transparent dark brown */
+  transition: background 0.3s ease;
+}
+
+#rickyAndMortyTable tbody tr:hover {
+  background: rgba(74, 44, 42, 0.7);
+}
+
+/* Table Cells */
+#rickyAndMortyTable td, #rickyAndMortyTable th {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+/* Nested Row Styling */
+#rickyAndMortyTable .dt-control {
+  cursor: pointer;
+  width: 20px;
+  text-align: center;
+}
+
+#rickyAndMortyTable .dt-control:hover {
+  background-color: rgba(212, 160, 23, 0.5); /* Semi-transparent orange */
+}
+
+
+
+#rickyAndMortyTable .child {
+  background: rgba(74, 44, 42, 0.6);
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+}
+
+#rickyAndMortyTable .child img {
+  
+  height: 100px;
+  width: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  filter: brightness(1.2); /* Enhance image contrast */
+}
+
+#rickyAndMortyTable .child img:hover {
+  transform: scale(1.1);
+}
+
+/* Search Bar */
+.dataTables_filter {
+  margin: 15px 0;
+}
+
+.dataTables_filter label {
+  color: white;
+}
+
+.dataTables_filter input {
+  border: 2px solid #FFFFFF !important;
+  border-radius: 6px !important;
+  padding: 8px 15px;
+  width: 250px;
+  font-size: 1rem;
+  background-color: #D4A017 !important;
+  color: white !important;
+  transition: all 0.3s ease;
+}
+
+.dataTables_filter input:focus {
+  border-color: #FFFFFF;
+  box-shadow: 0 0 8px rgba(212, 160, 23, 0.5);
+  outline: none;
+}
+
+/* DataTables Length Styling */
+.dataTables_length {
+  margin: 15px 0;
+  display: flex;
+  align-items: center; /* Vertically center label and select */
+  width: 200px; /* Increased width for extra space */
+}
+
+.dataTables_length label {
+  color: white;
+  margin-right: 10px; /* Space between label and select */
+  white-space: nowrap; /* Prevent label from wrapping */
+}
+
+.dataTables_length select {
+  background-color: #D4A017 !important;
+  padding: 5px !important;
+  border: 2px solid #FFFFFF !important;
+  width: 80px; /* Adjust width of select to fit within the increased container */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.dataTables_info {
+  color: #FFFFFF !important;
+}
+
+.ellipsis {
+  color: #FFFFFF;
+}
+
+/* Pagination */
+.dataTables_paginate {
+  margin: 15px 0;
+}
+
+.dataTables_paginate .paginate_button {
+  background: #D4A017;
+  color: #FFFFFF !important;
+  border: 1px solid #FFFFFF;
+  padding: 8px 12px;
+  margin: 0 5px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.dataTables_paginate .paginate_button:hover {
+  background: #FFFFFF;
+  color: #D4A017 !important;
+  transform: translateY(-2px);
+}
+
+.dataTables_paginate .paginate_button.current {
+  background: #D4A017;
+  font-weight: bold;
+}
+
+.dataTables_paginate .paginate_button.disabled {
+  background: rgba(74, 44, 42, 0.5);
+  cursor: not-allowed;
+  color: #FFFFFF;
+}
+
+/* Buttons in Actions Column */
+.btn-sm {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+/* Revert to Bootstrap default colors */
+.editbtn {
+  background-color: #ffc107; /* Bootstrap warning */
+  color: #212529;
+}
+
+.editbtn:hover, .savebtn:hover {
+  background-color: #ffca2c; /* Lighter warning on hover */
+  transform: translateY(-2px);
+}
+
+.savebtn {
+  background-color: #198754; /* Bootstrap success */
+  color: #fff;
+}
+
+.deletebtn {
+  background-color: #dc3545; /* Bootstrap danger */
+  color: #fff;
+}
+
+.deletebtn:hover {
+  background-color: #da190b; /* Lighter danger on hover */
+  transform: translateY(-2px);
+}
+
+/* Modal Styling */
+.modal-content {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  background: rgba(74, 44, 42, 0.9);
+  color: #FFFFFF;
+}
+
+.modal-header {
+  background: linear-gradient(135deg, #D4A017, #4A2C2A);
+  color: #FFFFFF;
+  border-bottom: none;
+  padding: 1.25rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+/* Form Elements Styling */
+.form-control, .input-container, select {
+  border-radius: 6px;
+  border: 2px solid #FFFFFF; /* Consistent border */
+  padding: 0.65rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #D4A017; /* Matching input background */
+  color: #FFFFFF; /* White text */
+  width: 100%; /* Ensure select and input have same width */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+  transition: all 0.3s ease;
+}
+
+.form-control:focus, .input-container:focus, select:focus {
+  border-color: #FFFFFF;
+  box-shadow: 0 0 8px rgba(212, 160, 23, 0.5); /* Orange glow on focus */
+  outline: none;
+}
+
+/* Custom Styling for File Input */
+ #imageFile {
+  /* display: none;  */
+  /* background-color: #D4A017; */
+
+} 
+
+#imageFile + label, .custom-file-label {
+  border: 2px solid #FFFFFF;
+  border-radius: 6px;
+  padding: 0.65rem 1rem;
+  background-color: #D4A017;
+  color: #FFFFFF;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  display: block; /* Ensure label is displayed as a block element */
+}
+
+#imageFile + label:hover, .custom-file-label:hover {
+  background-color: #e0b02a; /* Lighter orange on hover */
+  color: #FFFFFF;
+}
+
+#imageFile:focus + label, .custom-file-label:focus {
+  box-shadow: 0 0 8px rgba(212, 160, 23, 0.5);
+  outline: none;
+}
+
+#imageUrl {
+  margin-bottom: 0.5rem; /* Align with other inputs */
+}
+
+/* Text Danger for Errors */
+.text-danger {
+  color: #FF5555 !important; /* Red for error messages */
+  font-size: 0.85rem;
+}
+
+/* Button Styling */
+.btn-primary {
+  background: #D4A017;
+  border: 1px solid #FFFFFF;
+  padding: 0.65rem 1.5rem;
+  border-radius: 6px;
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background: #FFFFFF;
+  color: #D4A017;
+}
+
+/* Animations */
+@keyframes dripEffect {
+  0% { text-shadow: 0 0 5px #D4A017, 0 -5px 10px #FFFFFF; }
+  50% { text-shadow: 0 0 10px #D4A017, 0 -10px 15px #FFFFFF; }
+  100% { text-shadow: 0 0 5px #D4A017, 0 -5px 10px #FFFFFF; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  #rickyAndMortyTable {
+    font-size: 0.9rem;
+  }
+
+  #rickyAndMortyTable thead th {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  .dataTables_filter input {
+    width: 200px;
+  }
+
+  .dataTables_paginate .paginate_button {
+    padding: 6px 10px;
+    margin: 0 3px;
+  }
+
+  #rickyAndMortyTable .child img {
+    height: 80px;
+  }
+
+  .dataTables_length {
+    width: 180px; /* Slightly reduced width for smaller screens */
+  }
+
+  .dataTables_length select {
+    width: 70px; /* Adjust select width for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  #rickyAndMortyTable {
+    font-size: 0.85rem;
+  }
+
+  #rickyAndMortyTable thead th {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .dataTables_filter input {
+    width: 150px;
+  }
+
+  .dataTables_paginate {
+    text-align: center;
+  }
+
+  .dataTables_length {
+    width: 160px; /* Further reduced width for very small screens */
+  }
+
+  .dataTables_length select {
+    width: 60px; /* Adjust select width for very small screens */
+  }
+}
